@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Daftar Agama yang Tersedia</title>
+        <title> Daftar Agama yang Tersedia saat ini</title>
         <style>
             h1 {
                 text-align: center;
