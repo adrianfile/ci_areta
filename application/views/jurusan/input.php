@@ -9,16 +9,16 @@
 			}
 </style>
 <body>
-    <p><b>DAFTAR agama</b></p>
-    <?php echo form_open('agama/save'); ?>
+    <p><b>DAFTAR jurusan</b></p>
+    <?php echo form_open('jurusan/save'); ?>
 	<table align="center" border="1px">
 		<tr>
-			<td>Kode agama</td>
-			<td><input type="text" name="kode_agama" required></td></td>
+			<td>Kode jurusan</td>
+			<td><input type="text" name="kode_jurusan" required></td></td>
 		</tr>
 		<tr>
-			<td>Nama agama</td>
-			<td><input type="text" name="nama_agama" required></td>
+			<td>Nama jurusan</td>
+			<td><input type="text" name="nama_jurusan" required></td>
 		</tr>
 		<tr>
 			<td>

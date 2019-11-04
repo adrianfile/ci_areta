@@ -14,7 +14,7 @@
 	<table align="center" border="1px">
 		<tr>
 			<td>Kode Jurusan</td>
-			<td><input type="text" name="kode_jurusan" value="<?php echo $edit['kode_jurusan'] ?>" required></td></td>
+			<td><input type="text" name="kode_jurusan" value="<?php echo $edit['kode_jurusan'] ?>" readonly></td></td>
 		</tr>
 		<tr>
 			<td>Nama Jurusan</td>
