@@ -7,8 +7,10 @@ class M_calon_mahasiswa extends CI_Model{
     public function tampil(){
 
         $query = $this->db->query('SELECT * FROM calon_mahasiswa AS a 
-                                    LEFT JOIN agama AS b ON b.id_agama = a.id_agama 
-                                        LEFT JOIN jurusan AS c ON c.kode_jurusan = a.id_jurusan');
+                                    LEFT JOIN agama AS b 
+                                        ON b.id_agama = a.id_agama 
+                                            LEFT JOIN jurusan AS c 
+                                                ON c.kode_jurusan = a.id_jurusan');
         return $query;
         
     }

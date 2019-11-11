@@ -7,6 +7,9 @@ class calon_mahasiswa extends CI_Controller {
     public function __construct(){
         parent::__construct();
         $this->load->model('M_calon_mahasiswa');
+		$this->load->model('M_agama');
+		$this->load->model('M_jurusan');
+
     }
 
     public function index(){
@@ -18,6 +21,8 @@ class calon_mahasiswa extends CI_Controller {
 
     public function input(){
         $data['judul']="Input calon_mahasiswa";
+		$data['jurusan']=$this->M_jurusan->tampil()->result();
+		$data['agama']=$this->M_agama->tampil()->result();
         $this->load->view('calon_mahasiswa/input', $data, FALSE);
     }
 
@@ -54,6 +59,8 @@ class calon_mahasiswa extends CI_Controller {
     public function edit(){
         $id=$this->uri->segment(3);
         $data['edit']=$this->M_calon_mahasiswa->getid($id)->row_array();
+		$data['jurusan']=$this->M_jurusan->tampil()->result();
+		$data['agama']=$this->M_agama->tampil()->result();
         $this->load->view('calon_mahasiswa/edit', $data, FALSE);
     }
 
